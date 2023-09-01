@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="static/styles/style_task2.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <div class="buttons-block">
+                <a href="/"><img src="https://www.pngall.com/wp-content/uploads/12/Left-Arrow-PNG-Image.png" alt=""></img></a>
+            </div>
+            <div class="logo-block">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <form enctype="multipart/form-data" action="task2.php" method="post">
+            <div class="form-group">
+                <label for="file-field">Прикрепите csv файл</label>
+                <input type="hidden" name="MAX_FILE_SIZE" value="3500000" />
+                <input class="file-field" type="file" name="file" accept=".csv">
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>

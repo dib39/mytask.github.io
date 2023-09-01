@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+html{
+
+    height: 100%;
+    animation: myAnim 1s ease 0s 1 reverse forwards;
+
+}
+
+body{
+    background: linear-gradient(90deg, #6C177E 0%, #11119A 100%);
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+.buttons_tasks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+button{
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    background-color: #11119a00;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 8px;
+    transition: background-color 1s ease;
+    transition: color 2s ease;
+}
+
+button:hover{
+    background-color: #ffffff;
+    color: #282828;
+}
+
+.main{
+    text-align: center;
+    margin-top: 25%;
+}

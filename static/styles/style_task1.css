@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+html{
+    animation: myAnim 1s ease 0s 1 reverse forwards;
+}
+
+/* HEADER */
+
+.header{
+    background-color: rgba(40, 40, 40, 0.701);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding-inline: 1.1%;
+}
+
+.buttons-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.85;
+    transition: all 0.6s ease;
+}
+
+.buttons-block>a>img{
+    text-decoration: none;
+    max-height: 45px;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.buttons-block:hover{
+    opacity: 1;
+}
+
+.logo-block>img{
+    max-height: 64px;
+}
+
+/* FORM */
+
+form{
+    margin-inline: 350px;
+}
+
+.form-block{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.form-block>.input-field{
+    margin-top: 10px;
+}
+
+.form-group{
+    margin-top: 1em;
+}
+
+textarea{
+    resize: none;
+}
+
+
+.btn{
+    margin-top: 1em;
+
+}
